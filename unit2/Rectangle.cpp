@@ -36,3 +36,21 @@ void Rectangle::setHeight(int height) {
         throw invalid_argument("height");
     this->height = height;
 }
+
+Rectangle::Rectangle(int width, int height) {
+    cout << "Constructing a Rectangle" << endl;
+    setWidth(width);
+    setHeight(height);
+}
+
+Rectangle::Rectangle(int width, int height, const string &color) : Rectangle (width, height) {
+    cout << "Constructing a Rectangle with color" << endl;
+    this->color = color;
+}
+
+Rectangle::Rectangle(const Rectangle& source) {
+    cout << "Rectangle copied" << endl;
+    this->width = source.width;
+    this->height = source.height;
+    this->color = source.color;
+}
