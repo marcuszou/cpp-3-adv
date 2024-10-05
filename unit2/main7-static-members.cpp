@@ -3,9 +3,14 @@
 
 using namespace std;
 
+/*
+ * Destructor
+ */
+
 int main() {
     Rectangle first{10, 20};
-    Rectangle second = first;
+    Rectangle second{30, 40};
+    cout << Rectangle::getObjectsCount << endl;
 
     return 0;
 }

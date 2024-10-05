@@ -1,22 +1,18 @@
-//
-// Created by Marcus Zou on 2024-10-04.
-//
-
 #include "Rectangle.h"
 #include <iostream>
 
 using namespace std;
 
-void Rectangle::draw() {
+void Rectangle::draw() const {
     cout << "Drawing a rectangle" << endl;
     cout << "Dimensions: " << width << ", " << height << endl;
 }
 
-int Rectangle::getArea() {
+int Rectangle::getArea() const {
     return width * height;
 }
 
-int Rectangle::getWidth() {
+int Rectangle::getWidth() const {
     return width;
 }
 
@@ -37,7 +33,12 @@ void Rectangle::setHeight(int height) {
     this->height = height;
 }
 
+int Rectangle::getObjectsCount()
+{   return objectsCount;
+}
+
 Rectangle::Rectangle(int width, int height) {
+    objectsCount++;
     cout << "Constructing a Rectangle" << endl;
     setWidth(width);
     setHeight(height);
@@ -48,9 +49,15 @@ Rectangle::Rectangle(int width, int height, const string &color) : Rectangle (wi
     this->color = color;
 }
 
+Rectangle::~Rectangle() {
+    cout << "Destructor called" << endl;
+}
+
 Rectangle::Rectangle(const Rectangle& source) {
     cout << "Rectangle copied" << endl;
     this->width = source.width;
     this->height = source.height;
     this->color = source.color;
 }
+
+int Rectangle::objectsCount = 0;

@@ -8,4 +8,6 @@ add_executable(${PROJECT_NAME} main.cpp
         Rectangle.cpp
         Rectangle.h
         Person.cpp
-        Person.h)
+        Person.h
+        SmartPointer.cpp
+        SmartPointer.h)

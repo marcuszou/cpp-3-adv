@@ -3,12 +3,11 @@
 
 using namespace std;
 
-/*
- * Constructor
- */
+// The copy constructor
+
 int main() {
-    Rectangle rectangle;
-    cout << rectangle.getWidth() << endl;
+    Rectangle first{10, 20};
+    Rectangle second = first;
 
     return 0;
 }
