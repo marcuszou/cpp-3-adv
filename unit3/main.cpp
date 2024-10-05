@@ -1,13 +1,14 @@
 #include <iostream>
-#include "Point.h"
+#include "Length.h"
 
 using namespace std;
 
-int main() {
-    Point first{10, 20};
-    Point second{10, 20};
+// Spaceship Operator
 
-    cout << boolalpha << (first == second);
+int main() {
+    Length length{10};
+    cout << 1 << 2 << 3;
+
 
     return 0;
 }

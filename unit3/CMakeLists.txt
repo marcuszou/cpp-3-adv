@@ -8,4 +8,5 @@ add_executable(${PROJECT_NAME} main.cpp
         Length.cpp
         Length.h
         Point.cpp
-        Point.h)
+        Point.h
+)
