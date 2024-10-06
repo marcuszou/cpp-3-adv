@@ -6,9 +6,11 @@ using namespace std;
 // Spaceship Operator
 
 int main() {
-    Length length{10};
-    cout << 1 << 2 << 3;
-
+    Length first{10};
+    Length second{10};
+    Length third = first + second;
+    //cout << third;
+    first = second;
 
     return 0;
 }

@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Length.h"
 
 Length::Length(int value) : value(value){}
@@ -43,5 +44,20 @@ bool Length::operator>=(const Length &other) const {
 */
 ostream& operator<<(ostream &stream, const Length &length) {
     stream << length.getValue();
+    length.x;
     return stream;
+}
+
+Length Length::operator+(const Length &other) const {
+    return Length(value + other.value);
+}
+
+Length& Length::operator+=(const Length &other) {
+    value += other.value;
+    return *this;
+}
+
+Length& Length::operator=(const Length &other) {
+    value = other.value;
+    return *this;
 }
