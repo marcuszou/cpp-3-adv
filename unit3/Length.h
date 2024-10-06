@@ -3,10 +3,9 @@
 
 #include <compare>
 #include <ostream>
+#include <istream>
 
 using namespace std;
-
-class strong_ordering;
 
 class Length {
 public:
@@ -31,5 +30,5 @@ private:
 
 // Stream insertion operator
 ostream operator<<(ostream& stream, const Length& length);
-
+istream operator>>(istream& stream, Length& length);
 #endif //LENGTH_H
