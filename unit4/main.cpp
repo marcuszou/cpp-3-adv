@@ -1,11 +1,12 @@
 #include <iostream>
+#include "TextBox.h"
+#include "Widget.h"
 
-/*
- * main.cpp
- *
- */
+using namespace std;
 
 int main() {
-    cout << "Hellp World" << endl;
+    TextBox box;
+    box.disable();
+    cout << boolalpha << box.isEnabled();
 }
 

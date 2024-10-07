@@ -11,6 +11,7 @@ There are 6 Units in this advanced level C++ course:
 - Unit 3 - Operator Overloading (56m)
 	- @3.12
 - Unit 4 - Inheritance and Polymorphism (50m)
+	- @4.4
 - Unit 5 - Exceptions (23m)
 - Unit 6 - Templates (20m)
 
