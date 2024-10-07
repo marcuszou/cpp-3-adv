@@ -1,10 +1,12 @@
 #include <iostream>
 #include "Length.h"
+#include <compare>
+
+using namespace std;
 
 Length::Length(int value) : value(value){}
 
-bool Length::operator==(const Length &other) const
-{
+bool Length::operator==(const Length &other) const{
     return value == other.value;
 }
 
@@ -42,9 +44,8 @@ bool Length::operator>=(const Length &other) const {
     return !(value < other.value);
 }
 */
-ostream& operator<<(ostream &stream, const Length &length) {
+ostream &operator<<(ostream &stream, const Length &length) {
     stream << length.getValue();
-    length.x;
     return stream;
 }
 
