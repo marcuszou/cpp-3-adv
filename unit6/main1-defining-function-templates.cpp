@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Pair.h"
 using namespace std;
 
 // Tempplate
@@ -14,7 +13,11 @@ void display(K key, V value) {
 }
 
 int main() {
-    Pair pair("a", 1);
+    auto result = larger<double> (1, 2.2);
+    //larger (1,2);
+    //larger ('a', 'b');
+    display('a', 1);
+    display(1,1);
 
     return 0;
 }
