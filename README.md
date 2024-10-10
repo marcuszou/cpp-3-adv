@@ -13,6 +13,8 @@ There are 6 Units in this advanced level C++ course:
 - Unit 4 - Inheritance and Polymorphism (50m)
 	- @4.5
 - Unit 5 - Exceptions (23m)
+  - @5.6
+
 - Unit 6 - Templates (20m)
 
 
